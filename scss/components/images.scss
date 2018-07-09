@@ -1,0 +1,31 @@
+.headline--secondary{
+  @include title();
+  margin-bottom: 50px;
+}
+.grid__col--6{
+  .img--avatar{
+    @include img_cntrd();
+    margin-top: 50px;
+    @include lg_devices{
+        width: 40%;
+    }
+  }
+}
+.img--logo{
+    @include img_cntrd();
+    padding-top: 50px;
+    @include lg_devices{
+      padding-top: 35px;
+    }
+}
+
+.img--frame{
+  width: 95%;
+  @include img_cntrd();
+  @include lg_devices{
+    width: 80%;
+    margin: 50px;
+  }
+  padding: 10px;
+  border: 1px solid #ccc;
+}

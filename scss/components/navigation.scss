@@ -1,0 +1,63 @@
+.link{
+  padding-left: 0px;
+  text-align: center;
+}
+.grid__col--1,.grid__col--2,.grid__col--3,.grid__col--4,.grid__col--5,.grid__col--6,.grid__col--7,.grid__col--8,.grid__col--9,.grid__col--10,.grid__col--11,.grid__col--12{
+  width: 100%;
+  display: block;
+  float: none;
+  clear: both;
+}
+.nav{
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+  .nav__item{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover{
+      background: $title_nav_hover;
+      a{
+        color: #fff;
+      }
+    }
+    a{
+      text-decoration: none;
+      color: $primary_txt;
+      font-size: 14px;
+      width: 100%;
+
+    }
+  }
+}
+@include lg_devices{
+  .link{
+    padding-left: 30px;
+  }
+  .nav{
+    padding-top: 70px;
+    margin-left: 20% !important;
+    .nav__item{
+      width: inherit;
+      padding: 0px;
+      background: none;
+      &:hover{
+        background: none;}
+      a{
+        text-decoration: none;
+        color: $primary_txt;
+        padding: 10px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        &:hover{
+          background: $title_nav_hover;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

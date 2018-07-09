@@ -1,0 +1,32 @@
+.grid__col--8{
+  .headline--primary{
+    color: $title_nav_hover;
+    padding-left: 20px;
+  }
+  @include lg_devices{
+    p{
+      width: 85%;
+    }
+  }
+  .link{
+    padding-left: 0px;
+    text-decoration: none;
+    font-weight: 600;
+    color: $default;
+  }
+  .blockquote{
+    border-radius: 5px;
+    border-left: 9px solid $title_nav_hover;
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: thin;
+    opacity: $primary_opacity;
+    @include lg_devices{
+      width: 84%;
+      padding-left: 40px;
+      font-size: 25px;
+      font-weight: 200;
+    }
+  }
+}

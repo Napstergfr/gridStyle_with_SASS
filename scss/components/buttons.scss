@@ -1,0 +1,34 @@
+.btns{
+  .theme__colors{
+    margin-bottom: 15px;
+  }
+  @include lg_devices{
+    padding: 40px 20px;
+    margin-bottom: 0px;
+    @include dflex();
+    width: 100% !important;
+    .theme__colors{
+      width: 18% !important;
+    }
+  }
+}
+.btn--default{
+  background: $default;
+  @include btn();
+}
+.btn--success{
+  @include btn();
+  background: $success;
+}
+.btn--error{
+  @include btn();
+  background: $error;
+}
+.btn--warning{
+  @include btn();
+  background: $warning;
+}
+.btn--info{
+  @include btn();
+  background: $info;
+}

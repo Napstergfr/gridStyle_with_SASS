@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+  font-family: $primary_font;
+  color:  $primary_txt;
+
+}
+html {
+  box-sizing: border-box;
+}
+p,h1,h3,h4,h5,a{
+  opacity: $primary_opacity;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.grid__col--9{
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+}

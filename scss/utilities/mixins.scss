@@ -1,0 +1,30 @@
+@mixin title{
+    font-weight: 300;
+    opacity: $primary_opacity;
+}
+@mixin padmar0{
+    padding: 0px;
+    margin: 0px;
+}
+@mixin btn{
+  border: none;
+  padding: 10px 0px;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+@mixin img_cntrd{
+  margin: 0 auto;
+  display: block;
+}
+@mixin dflex{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin lg_devices{
+  @media screen and (min-width: $media_wid){
+    @content;
+  }
+}

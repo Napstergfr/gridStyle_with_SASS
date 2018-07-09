@@ -1,0 +1,39 @@
+::-webkit-input-placeholder {
+  color: $primary_txt;
+}
+::-moz-placeholder {
+  color: $primary_txt;
+}
+:-ms-input-placeholder {
+  color: $primary_txt;
+}
+:-moz-placeholder {
+  color: $primary_txt;
+}
+.form{
+  .headline--secondary{
+    margin-top: 30px;
+    @include title();
+    margin-bottom: 30px;
+  }
+  .img--avatar{
+    @include img_cntrd();
+    clear: both;
+    margin-bottom: 30px;
+  }
+  input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid $title_nav_hover;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: none;
+    font-weight: 400;
+    color: $primary_txt;
+    opacity: $primary_opacity;
+  }
+  label{
+    display: none;
+  }
+}
